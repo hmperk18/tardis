@@ -5,7 +5,8 @@ from scipy.interpolate import interp1d
 import warnings
 from tardis.spectrum.formal_integral.formal_integral_cuda import CudaFormalIntegrator
 from tardis.spectrum.formal_integral.formal_integral_numba import NumbaFormalIntegrator, calculate_p_values, trapezoid_integration
-from tardis.spectrum.formal_integral.base import check, make_source_function
+from tardis.spectrum.formal_integral.base import check
+from tardis.spectrum.formal_integral.source_function_solver import make_source_function
 from tardis.spectrum.spectrum import TARDISSpectrum
 from tardis.transport.montecarlo.configuration import montecarlo_globals
 
